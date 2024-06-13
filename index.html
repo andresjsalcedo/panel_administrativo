@@ -25,18 +25,39 @@
           <h6 class="card-subtitle mb-2 mt-4 text-body-dark text-center">Contraseña</h6>
           <div class="col-auto">
             <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
-            <p class="fw-bold mb-4"><a class="text-decoration-none text-dark" href="Pagina-inicial">¿Olvido Su Contraseña?</a></p>
+            <p class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Olvido Su Contraseña?</p>
           </div>
           <div class="text-center">
-          <button type="button" class="btn btn-secondary mb-4"><a class=" text-white text-decoration-none" href="Panel inicial.html">Ingresar</a></button>
+          <button type="button" class="btn btn-secondary mb-4"><a class=" text-white text-decoration-none"href="Panel inicial.html">Ingresar</a></button>
           </div>
-          <div class="text-center mb-2" alt="Boton_redes">
-            <button type="button" class="btn btn-white border-black">Ingresar con Google</button>
-            <button type="button" class="btn btn-primary">Ingresar con Facebook</button>
           </div>
-        </div>
-      </div>
+          
+          <div class="text-center mb-4" alt="Boton_redes">
+            <button type="button" class="btn btn-white border-black"><img src="img/google_logo-google_icongoogle-512.webp" class="me-2 mb-1" style="width: 1rem;">Ingresar con Google</button>
+            <button type="button" class="btn btn-info"><img src="img/2023_Facebook_icon.svg" class=" me-2 mb-1" style="width: 1rem;">Ingresar con Facebook</button>
+          </div>
+    </div>
 
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Recupere su Contraseña</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label ms-3 mt-2">Email address</label>
+        <input type="email" class="form-control ms-3" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-success">Enviar Codigo</button>
+      </div>
+    </div>
+  </div>
+</div>
+      
     
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

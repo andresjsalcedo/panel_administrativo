@@ -43,11 +43,50 @@
           <p class="card-text">3203134576</p>
           <p class="card-text">Contraseña</p>
         </div>
-        <button type="button" class="btn btn-success mt-1">Modificar Datos</button>
+        <button type="button" class="btn btn-success mt-1" data-bs-toggle="modal" data-bs-target="#exampleModal">Modificar Datos</button>
         <button type="button" class="btn btn-success mt-1">Cambiar Contraseña</button>
       </div>
 
 
+      <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modificar datos de usuario</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="mt-2 ms-3 me-3">
+            <h6>Nombre de usuario</h6>
+        <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+        </div>
+        <div class="col-md-4 mt-2 ms-3 me-2">
+            <label for="inputState" class="form-label">Rol</label>
+            <select id="inputState" class="form-select">
+              <option selected>Administrador</option>
+              <option selected>Usuario</option>
+            </select>
+          </div>
+          <div class="mb-2 mt-2 ms-3 me-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mt-2 ms-3 me-3">
+            <h6>Telefono</h6>
+        <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+        </div>
+        <div class="mt-2 ms-3 me-3 mb-2">
+            <h6>Contraseña</h6>
+        <input class="form-control" type="password" placeholder="Default input" aria-label="default input example">
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-success">Confirmar Cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
