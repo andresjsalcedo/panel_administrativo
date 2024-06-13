@@ -9,8 +9,5 @@
 .img-blur {
     filter: blur(4px); /* Ajusta el valor según el nivel de desenfoque deseado */
 }
-body{
-    margin: 0;
-    background-image: url(../img/requisitos_legales_ecommerce.jpg);
-}
+
   
