@@ -1,0 +1,16 @@
+:root {
+    --primary: #3b5998;
+    --dark: #000000;
+    --light: #ffffff;
+    --grey: #545454;
+    --info: #4385F4;
+}
+
+.img-blur {
+    filter: blur(4px); /* Ajusta el valor según el nivel de desenfoque deseado */
+}
+body{
+    margin: 0;
+    background-image: url(../img/requisitos_legales_ecommerce.jpg);
+}
+  
